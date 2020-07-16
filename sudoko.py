@@ -21,17 +21,17 @@ x_train, x_test, y_train, y_test = get_data('sudoku.csv')
 #################################################################
 #uncomment this to train your own model
 #################################################################
-"""model = get_model()
+model = get_model()
 
 adam = keras.optimizers.Adam(lr=.001)
 model.compile(loss='sparse_categorical_crossentropy', optimizer=adam)
 
 model.fit(x_train, y_train, batch_size=32, epochs=2)
-"""
+
 
 #################################################################
 #or use this to train on the model you have already created
-model = keras.models.load_model('model/sudoku.model')
+#model = keras.models.load_model('model/sudoku.model')
 #################################################################
 
 
