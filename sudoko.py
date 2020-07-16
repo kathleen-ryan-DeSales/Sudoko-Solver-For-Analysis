@@ -107,7 +107,7 @@ def test_accuracy(feats, labels):
     
     
 #Uncomment this out if you want to see how your model does on the test data    
-#test_accuracy(x_test[:100], y_test[:100])
+test_accuracy(x_test[:100], y_test[:100])
 
 
 #################################################################
