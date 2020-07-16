@@ -2,6 +2,7 @@
 """
 The bulk of this code is from this website.  We just needed to analyze it
 to learn from it.  Thank you to the author!
+https://towardsdatascience.com/solving-sudoku-with-convolution-neural-network-keras-655ba4be3b11
 https://github.com/shivaverma/Sudoku-Solver/blob/master/sudoku.ipynb
 """
 
@@ -13,8 +14,9 @@ from scripts.data_preprocess import get_data
 
 #################################################################
 #load the data
-
+#################################################################
 x_train, x_test, y_train, y_test = get_data('sudoku.csv')
+
 
 #################################################################
 #uncomment this to train your own model
@@ -39,6 +41,8 @@ model = keras.models.load_model('model/sudoku.model')
 #################################################################
 #Solve Sudoku by filling blank positions one by one
 #################################################################
+
+
 #normalize data so its centered about 0 - CNNs like this
 def norm(a):
     
@@ -102,7 +106,7 @@ def test_accuracy(feats, labels):
     print("Accuracy:", correct/feats.shape[0])
     
     
-    
+#Uncomment this out if you want to see how your model does on the test data    
 #test_accuracy(x_test[:100], y_test[:100])
 
 

@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+sudoku.csv
+
+model/sudoku.model
