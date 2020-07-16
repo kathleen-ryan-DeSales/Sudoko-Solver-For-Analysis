@@ -1,0 +1,14 @@
+Article: https://towardsdatascience.com/solving-sudoku-with-convolution-neural-network-keras-655ba4be3b11
+
+Via the link in the article I downloaded the needed sudoko csv, which is now in the github package.
+
+
+Running failed cause I needed to install keras.  I did that with these directions.
+http://xperimentallearning.blogspot.com/2019/08/python-install-keras-on-anaconda-in.html
+
+
+In the deeplearning environment created at the above link, I also did this install in the anaconda prompt.
+conda install scikit-learn
+
+I opened the anaconda navigator to change the environment to deeplearning (see below).  Then I launched Spyder from the navigator.  Running took awhile because I rebuilt the model.
+https://stackoverflow.com/questions/30170468/how-to-run-spyder-in-virtual-environment
